@@ -1,0 +1,27 @@
+.news-card {
+  width: 100%;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-gap: 20px;
+  -webkit-grid-gap: 20px;
+
+  mat-card {
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    mat-card-title {
+      text-align: justify;
+      padding-bottom: 5px;
+      font-size: 15px;
+    }
+
+    mat-card-subtitle {
+      text-align: justify;
+      font-size: 12px;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+<!-- <img [src]="data.urlToImage" alt="">
+<div>{{data.title}}</div>
+<div [innerHTML]="data.content"></div>
+<a [href]="data.url" target="_blank">More Details</a> -->
+
+<h2 mat-dialog-title>{{data.title}}</h2>
+<mat-dialog-content class="mat-typography">
+    <img [src]="data.urlToImage" alt="">
+    <div [innerHTML]="data.content"></div>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+    <a mat-button mat-dialog-close [href]="data.url" target="_blank">More Details</a>
+</mat-dialog-actions>
